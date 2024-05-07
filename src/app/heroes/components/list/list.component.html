@@ -1,4 +1,4 @@
-<h3>Listado de Héroes</h3>
+<h3 class="mt-3">Listado de Héroes</h3>
 
 <div *ngIf="deletedHero; else nothingWasDeleted">
   <h4>
@@ -11,7 +11,11 @@
   <p *ngIf="!deletedHero">No haz borrado nada</p>
 </ng-template>
 
-<button (click)="removeLastHero()" class="btn btn-outline-danger fw-bold mt-2">
+<button
+  *ngIf="heroNames.length !== 0"
+  (click)="removeLastHero()"
+  class="btn btn-outline-danger fw-bold mt-2"
+>
   Borrar último héroe
 </button>
 
