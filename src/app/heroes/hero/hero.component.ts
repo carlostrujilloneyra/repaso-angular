@@ -7,10 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HeroComponent {
   public name: string = 'Iron Man';
+
   public age: number = 45;
 
+  public showButton: boolean = true;
+
+  public students: string[] = [];
+
   changeNameHero(): void {
-    this.name = 'spiderman';
+    this.name = 'Spiderman';
+    this.showButton = !this.showButton;
   }
 
   changeAgeHero(): void {

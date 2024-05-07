@@ -5,4 +5,13 @@ import { Component } from '@angular/core';
   templateUrl: './list.component.html',
   styleUrl: './list.component.css',
 })
-export class ListComponent {}
+export class ListComponent {
+  public heroNames: string[] = ['Spiderman', 'Hulk', 'Gambito', 'Thor'];
+
+  public deletedHero?: string;
+
+  removeLastHero(): void {
+    this.deletedHero = this.heroNames.pop();
+    console.log(this.deletedHero);
+  }
+}
