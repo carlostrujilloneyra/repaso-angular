@@ -1,0 +1,20 @@
+<h2>Spiderman</h2>
+
+<!-- definition list -->
+<dl>
+  <td>Nombre:</td>
+  <!-- description -->
+  <dd>{{ name }}</dd>
+
+  <td>Edad:</td>
+  <dd>{{ age }}</dd>
+
+  <td>Método:</td>
+  <dd>{{ getHeroDescription() }}</dd>
+
+  <td>Capitalizado:</td>
+  <dd>{{ capitalizedName }}</dd>
+</dl>
+
+<button class="btn btn-primary" (click)="changeNameHero()">Cambiar nombre</button>
+<button class="btn btn-primary" (click)="changeAgeHero()">Cambiar edad</button>
