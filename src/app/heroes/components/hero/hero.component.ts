@@ -14,6 +14,8 @@ export class HeroComponent {
 
   public students: string[] = [];
 
+  public showMessage: boolean = false;
+
   changeNameHero(): void {
     this.name = 'Spiderman';
     this.showButton = !this.showButton;

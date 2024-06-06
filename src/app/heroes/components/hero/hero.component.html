@@ -1,23 +1,29 @@
-<h2>Spiderman</h2>
+<div style="margin-top: 1rem">
+  <h2>Spiderman</h2>
 
-<!-- definition list -->
-<dl>
-  <td>Nombre:</td>
-  <!-- description -->
-  <dd>{{ name }}</dd>
+  <!-- definition list -->
+  <dl>
+    <td>Nombre:</td>
+    <!-- description -->
+    <dd>{{ name }}</dd>
 
-  <td>Edad:</td>
-  <dd>{{ age }}</dd>
+    <td>Edad:</td>
+    <dd>{{ age }}</dd>
 
-  <td>Método:</td>
-  <dd>{{ getHeroDescription() }}</dd>
+    <td>Método:</td>
+    <dd>{{ getHeroDescription() }}</dd>
 
-  <td>Capitalizado:</td>
-  <dd>{{ capitalizedName }}</dd>
-</dl>
+    <td>Capitalizado:</td>
+    <dd>{{ capitalizedName }}</dd>
+  </dl>
 
-<button *ngIf="name === 'Iron Man'.trim()" class="btn btn-primary" (click)="changeNameHero()">
-  Cambiar nombre
-</button>
+  <div *ngIf="showMessage">
+    <p>Mostrando mensaje</p>
+  </div>
 
-<button class="btn btn-primary" (click)="changeAgeHero()">Cambiar edad</button>
+  <button *ngIf="name === 'Iron Man'.trim()" class="btn btn-primary" (click)="changeNameHero()">
+    Cambiar nombre
+  </button>
+
+  <button class="btn btn-primary" (click)="changeAgeHero()">Cambiar edad</button>
+</div>
