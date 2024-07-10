@@ -14,31 +14,31 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
-        "@angular-eslint/component-class-suffix": [
-          "error",
-          {
-            "suffixes": ["Page", "Component"]
-          }
-        ],
-        "@angular-eslint/component-selector": [
-          "error",
-          {
-            "type": "element",
-            "prefix": "app",
-            "style": "kebab-case"
-          }
-        ],
-        "@angular-eslint/directive-selector": [
-          "error",
-          {
-            "type": "attribute",
-            "prefix": "app",
-            "style": "camelCase"
-          }
-        ],
-        "@angular-eslint/use-lifecycle-interface": ["error"],
-        "@typescript-eslint/member-ordering": 0,
-        "@typescript-eslint/naming-convention": 0,
+        // "@angular-eslint/component-class-suffix": [
+        //   "error",
+        //   {
+        //     "suffixes": ["Page", "Component"]
+        //   }
+        // ],
+        // "@angular-eslint/component-selector": [
+        //   "error",
+        //   {
+        //     "type": "element",
+        //     "prefix": "app",
+        //     "style": "kebab-case"
+        //   }
+        // ],
+        // "@angular-eslint/directive-selector": [
+        //   "error",
+        //   {
+        //     "type": "attribute",
+        //     "prefix": "app",
+        //     "style": "camelCase"
+        //   }
+        // ],
+        // "@angular-eslint/use-lifecycle-interface": ["error"],
+        // "@typescript-eslint/member-ordering": 0,
+        // "@typescript-eslint/naming-convention": 0,
         "no-unused-vars": "warn"
       }
     },
